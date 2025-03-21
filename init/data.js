@@ -14,9 +14,7 @@ const sampleImages = [
     {
         image: "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/02/10/lead.png"
     },
-    {
-        video: "https://cdn.pixabay.com/video/2024/03/04/202929-919288883_large.mp4"
-    }
+   
 ];
 
 module.exports = {data: sampleImages};
