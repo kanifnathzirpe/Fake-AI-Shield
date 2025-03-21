@@ -22,7 +22,8 @@ Video Analysis:
 
 
 About Page:
-![image](https://github.com/user-attachments/assets/9da92823-e8e4-4941-b96f-eaf6fc6b6286)
+![image](https://github.com/user-attachments/assets/27bf570e-5211-444f-9e6c-0aa5e369e5c6)
+
 
 Light Theme: 
 ![image](https://github.com/user-attachments/assets/116c737a-d2ba-49cf-b9b1-c5d3fa16d7c7)
