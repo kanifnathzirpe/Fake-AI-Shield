@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news</title>
+    <style>
+      nav {
+        position: absolute;
+        top: 0;
+      }
+      body {
+        background-color: rgb(36, 0, 57) !important;
+        display: flex;
+        justify-content: center;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container{
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        margin-top: 100px;
+        background-color: rgb(36, 0, 57);       
+      }
+      .header{
+       
+        padding: 5rem;
+        padding-left: 30%;
+        width: 100%;
+        gap: 5px;
+      }
+      .header h2{
+        color: rgb(99, 186, 163);
+        font-size: 3rem;
+      }
+      .header p{
+        color: white;
+        font-size: 2rem;
+      }
+      .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      hr {
+       color:  rgb(255, 255, 255) !important;
+       height: 2px;
+       width: 100vw;
+      }
+       /* .box1{
+        display: flex;
+        justify-items: center;
+        /* align-items: center;  
+        flex-direction: column;
+        gap: 10px; 
+      } */
+     
+      .imagebox1{
+        height: 65vh;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+      }
+      .footer {
+        background-color: #00056b;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100vw;
+        height: 100px;
+        margin-top: 50px;
+        /* position: absolute; */
+        /* bottom: 0; */
+}
+
+      .infobox1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 30%;
+        padding-right: 30%;
+        gap: 10px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .infobox1 h3{
+        font-size: 2rem;
+      }
+      .infobox1 p{
+        color: grey;
+      }
+      .imagebox2{
+        height: 40vh;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+      }
+      .infobox2{
+        color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 10%;
+
+        gap: 10px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .infobox2 h3{
+        font-size: 2rem;
+        color: white;
+      }
+      .infobox2 p{
+        color: grey;
+      }
+      .imagebox3{
+        height: 40vh;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+      }
+      .infobox3{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 30%;
+        padding-right: 30%;
+        gap: 10px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .infobox3 h3{
+        font-size: 2rem;
+      }
+      .infobox3 p{
+        color: grey;
+      }
+    </style>
+     <link rel="stylesheet" href="/css/nav.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+         
+         body {
+             background-color: white;
+             color: black;
+             transition: background-color 0.3s, color 0.3s;
+         }
+
+         .cont-light{
+           background-color: white;
+         }
+         .navbar-custom {
+             background-color: #f3f4f6; 
+             padding: 15px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+         }
+ 
+         .nav-link {
+             text-decoration: none;
+             color: rgb(255, 255, 255);
+             margin: 0 10px;
+             font-size: 18px;
+             background-color: rgb(25, 25, 25);
+         }
+ 
+         .nav-btn {
+             padding: 8px 16px;
+             background-color: #ccc;
+             border: none;
+             cursor: pointer;
+             border-radius: 5px;
+         }
+ 
+         
+         .light-mode {
+             background-color: #ffffff !important; 
+             color: rgb(0, 0, 0) !important;
+             transition: 1s ease-in-out;
+         }
+ 
+         .light-mode .navbar-custom  {
+             background-color: #ffffff !important;
+             transition: 1s ease-in-out;
+         }
+ 
+         .light-mode .nav-links a {
+             color: white !important;
+         }
+ 
+         .light-mode .nav-btn {
+             background-color: #4a5568 !important;
+             color: white !important;
+         }
+     </style>
+  </head>
+  <body>
+    <%- include('nav') %>
+    <div class="container">
+      <div class="header">
+        <h2>Stay informed</h2>
+        <p>get update on recent harmful deepfakes cases</p>
+      </div>
+      <div class="main">
+        <hr>
+        <div class="box1">
+          <div class="imagebox1">
+            <img src="/images/rise of deepfakes.png" alt="IMAGE" />
+          </div>
+          <div class="infobox1">
+            <h3>
+              One out of four people is facing deepfake content in india ,
+              reveals survey
+            </h3>
+            <p>
+              A recent survey revealed that 1 in 4 people in India is exposed to
+              deepfake content, showing its rapid spread. Celebrities and
+              political leaders have also become victims of these manipulations.
+              In response, the central government enforced strict regulations
+              against deepfakes since 2023. Heavy fines are now imposed on those
+              propagating such content. In severe cases, offenders can also face
+              imprisonment for a specified period.
+            </p>
+            <hr>
+          </div> 
+        </div>
+          <div class="box2">
+          <div class="imagebox2">
+            <img src="/images/modi gandhi.png" alt="IMAGE" />
+          </div>
+          <div class="infobox2">
+            <h3>Ai and deepfakes blur reality in india election</h3>
+            
+                In November, fact-checker Muralikrishnan Chinnadurai spotted an
+                AI-generated deepfake of Duwaraka, daughter of Tamil Tiger chief
+                Velupillai Prabhakaran, despite her reported death in 2009.
+                The video, urging Tamilians to continue their political
+                struggle, raised concerns about misinformation, especially with
+                upcoming elections in Tamil Nadu.
+                AI-generated content, including campaign videos, personalized
+                messages, and voice-cloned calls, is increasingly influencing
+                Indian elections.
+                Content creators are also using AI for entertainment, depicting
+                politicians in unconventional avatars.
+                Experts warn that AI-powered misinformation could spread rapidly
+                on social media, intensifying the challenge of detecting fake
+                news during elections.
+          </div>
+        </div> <hr>
+        <div class="box3">
+          <div class="imagebox3">
+            <img src="/images/colored face.png" alt="IMAGE" />
+          </div>
+          <div class="infobox3">
+            <h3>
+              In Bengaluru 2 individuals suffers great loss due to deepfake videos
+            </h3>
+            <p>
+              Recently, several individuals in Bengaluru have suffered significant financial losses due to deepfake video scams. Notably, two residents were duped out of nearly Rs 95 lakh by fraudulent videos featuring prominent business figures like NR Narayana Murthy and Mukesh Ambani. Other victims, including a chartered accountant, have also reported losses amounting to lakhs, highlighting the growing threat of deepfake technology in financial fraud. ## Overview of the Deepfake Scam in Bengaluru
+
+In Bengaluru, two individuals have experienced substantial financial losses due to deepfake videos that misrepresented well-known personalities. The scams have raised alarms about the dangers posed by advanced technology in the realm of fraud.
+
+            </p>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Fake AI Shield &nbsp; All right reserved &copy; 2025</p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div> <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const btn = document.querySelector(".nav-btn");
+        const cls = document.querySelector(".fa-solid");
+        const cont = document.querySelector(".container");
+        const body = document.body;
+
+
+
+        
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("light-mode");
+            cls.classList.remove("fa-moon");
+            cls.classList.add("fa-sun");
+            cont.classList.add("cont-light");
+          } else {
+            cls.classList.add("fa-moon");
+            cont.classList.remove("cont-light");
+            
+          }
+          
+          
+          btn.addEventListener("click", () => {
+            body.classList.toggle("light-mode");
+            cls.classList.toggle("fa-sun");
+            cls.classList.toggle("fa-moon");
+
+
+            
+            localStorage.setItem("theme", body.classList.contains("light-mode") ? "dark" : "light");
+        });
+    </script>
+  </body>
+</html>

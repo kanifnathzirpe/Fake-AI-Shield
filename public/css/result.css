@@ -1,0 +1,41 @@
+body {
+    background-color: black !important;
+    background-image: url(/images/AI-search.jpg);   
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+h2, h4 {
+    color: white !important;
+}
+nav {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+}
+.footer {
+    background-color: #00056b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 20px rgb(0, 0, 255) !important;
+    
+}
+img {
+    transition: 1s ease-in-out;
+
+}
+
+.ctm-box {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}  
+

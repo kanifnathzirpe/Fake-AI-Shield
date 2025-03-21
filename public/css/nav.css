@@ -1,0 +1,56 @@
+.logo {
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(122, 20, 159);
+    
+}
+span {
+    background-color: rgb(208, 208, 208);
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+span:hover {
+    box-shadow: 2px 2px 20px rgb(104, 0, 149);
+}
+.logo:hover {
+    box-shadow: 2px 2px 10px rgb(104, 0, 149);
+}
+nav {
+    position: fixed !important;
+    width: 100%;
+    display: block;
+    transition: 1s ease-in-out;
+}
+.navbar-custom {
+    background-color: black !important;
+    
+    
+}
+.navbar-custom .navbar-nav .nav-link {
+    display: inline-block;
+    color: white;
+    border: 2px solid rgba(47, 0, 100, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: rgb(69, 0, 111);
+    box-shadow: 2px 2px 10px rgb(174, 0, 255);
+}
+ul li {
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+.nav-btn {
+    border-radius: 50% !important;
+    height: 50px;
+    width: 50px;
+}
+.nav-btn:hover {
+    
+    box-shadow: 2px 2px 10px rgb(174, 0, 255);
+}

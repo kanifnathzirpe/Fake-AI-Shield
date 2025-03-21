@@ -1,0 +1,57 @@
+nav {
+    z-index: 1000;
+    position: absolute;
+    top: 0; 
+}
+
+body {
+    background-color: black !important;
+    background-image: url(/images/AI-search.jpg);   
+    background-size: cover;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.custom-form {
+   align-self: center;
+   margin-top: 150px;
+    color: white;
+    justify-self: center;
+    background-color: rgb(0, 9, 76);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+
+}
+.footer {
+    background-color: #00056b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.custom-form:hover {
+    box-shadow: 0 0 20px rgb(41, 0, 204) !important;
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    transition-delay: 2ms; 
+    
+}
+
+.conthead {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+input, textarea {
+    background-color: rgb(224, 224, 224) !important;
+
+}
+textarea {
+    border-radius: 12px;
+}

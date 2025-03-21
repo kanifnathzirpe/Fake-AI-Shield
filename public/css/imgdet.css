@@ -1,0 +1,28 @@
+body {
+    background-color: black !important;
+    background-image: url(/images/AI-search.jpg);   
+    background-size: cover;
+    color: white;
+}
+nav {
+    z-index: 1000;
+}
+
+.custom-div {
+    transition: 1s ease-in-out;
+    margin-top: 200px !important;
+    width: 70%;
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+}   
+.footer {
+    background-color: #00056b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 20px;
+    width: 100%;
+}
